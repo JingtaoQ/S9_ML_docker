@@ -36,7 +36,7 @@ def hello():
     """
     return jsonify({"hello": "world"})
 
-@app.route("/api/hello/douzi")
+@app.route("/api/hello/<name>")
 def hello_name(name):
     """
     Return a hello message with name
